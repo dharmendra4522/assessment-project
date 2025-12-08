@@ -1,0 +1,196 @@
+/* Root Container */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Dashboard Heading */
+.app-container > div:first-child h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #4f63e9;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+/* App Layout */
+.app-container {
+  display: flex;
+  gap: 0;
+  min-height: 80vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 280px;
+  background: #fff;
+  border-right: 1px solid #e0e0e0;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.05);
+  overflow-y: auto;
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  overflow-x: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Search Bar */
+.search-bar {
+  width: 100%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.search-bar:focus {
+  outline: none;
+  border-color: #4f63e9;
+  box-shadow: 0 0 6px rgba(79, 99, 233, 0.3);
+}
+
+/* Sort Controls */
+.sort-controls {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.sort-controls select {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+table th, table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+table thead {
+  background-color: #4f63e9;
+  color: white;
+  font-weight: 600;
+}
+
+table tbody tr:hover {
+  background-color: #f1f5ff;
+  transition: background-color 0.2s;
+}
+
+/* Pagination */
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.pagination button {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #fff;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pagination button:hover {
+  background: #4f63e9;
+  color: #fff;
+  border-color: #4f63e9;
+}
+.header-row {
+  display: flex;
+  align-items: center;   /* vertically center items */
+  justify-content: space-between; /* push heading left, search right */
+  gap: 20px;             /* optional spacing between heading and search */
+  margin-bottom: 20px;
+  flex-wrap: wrap;       /* wraps on smaller screens */
+}
+
+.header-row h1 {
+  font-size: 2rem;
+  color: #4f63e9;
+  margin: 0;
+}
+
+.header-row .search-bar {
+  flex: 1;              /* makes search bar expand to available space */
+  max-width: 400px;     /* optional max width */
+}
+
+/* MAIN FILTER PANEL */
+.filter-panel {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+  margin-bottom: 15px;
+}
+
+
+/* DROPDOWN (React Select) */
+.filter-select {
+  width: 180px;
+}
+
+.filter-select .react-select__control {
+  border-radius: 8px !important;
+  border: 1px solid #dcdcdc !important;
+  min-height: 42px;
+  box-shadow: none !important;
+}
+
+.filter-select .react-select__control:hover {
+  border-color: #4f63e9 !important;
+}
+
+
+/* DATE INPUTS */
+.filter-date {
+  padding: 10px 12px;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  font-size: 14px;
+  width: 160px;
+  background: #fff;
+  transition: 0.2s ease;
+}
+
+.filter-date:focus {
+  border-color: #4f63e9;
+  box-shadow: 0 0 6px rgba(79, 99, 233, 0.3);
+}
+
